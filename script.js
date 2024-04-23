@@ -141,7 +141,7 @@ const displayPokemon = pokemon => {
 
 const fetchPokemon = async pokemonName => {
     try {
-        const res = await fetch(`http://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonName}`);
+        const res = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonName}`);
         const data = await res.json();
 
         displayPokemon(data);
